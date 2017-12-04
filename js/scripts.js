@@ -5,9 +5,11 @@ $(document).ready(function() {
     var bestFood = $("input#favfood").val();
     var secondFav=$("input:radio[name=operator]:checked").val();
     var foodarray= [foodPreference, bestFood, secondFav];
+    var shortarray=foodarray[0].concat("and "+foodarray[1]);
 
-    $
-    $(".foodresult").text(foodarray);
+
+    $(".shortarrayoutput").text(shortarray);
+
 
   });
 });
